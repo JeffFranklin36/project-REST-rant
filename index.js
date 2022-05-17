@@ -3,8 +3,10 @@ const express = require('express')
 const app = express()
 
 //engine
+app.set('views', __dirname +'/views')
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
+app.use(express.static('public'))
 
 
 //routes
