@@ -23,11 +23,8 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-//   if (!req.body.pic) {
-//    req.body.pic = '/images/default-restaraunt-img.avif'
-//  }
-// places.push(req.body)
-res.send('/places')
+console.log(req.body)
+res.send('POST /places')
 })
 
 module.exports = router
