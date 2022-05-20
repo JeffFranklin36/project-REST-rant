@@ -5,7 +5,6 @@ const Def = require('../default')
 function index (data) {
  let placesFormatted = data.places.map((place) => {
  return (
-  <Def>
    <div className='col-sm-6'>
      <h2>{place.name}</h2>
      <p className='text-center'>
@@ -16,7 +15,6 @@ function index (data) {
        Located in {place.city}, {place.state}
      </p>
    </div>
-  </Def>
  )
 })
 return (
