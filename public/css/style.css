@@ -4,8 +4,8 @@ h1 {
 }
 
 img {
- height: 500px;
- width: 50vw;
+ width: 50%;
+ margin: auto;
 }
 
 nav {
