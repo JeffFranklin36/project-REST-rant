@@ -12,9 +12,9 @@ function show (data) {
             <p>Located in { data.place.city }, { data.place.state } and serving { data.place.cuisines }</p>
             <h2>Comments</h2>
             <p>No comments yet!</p>
-            <a href={`/places/${data.id}/edit`} className="btn btn-warning">Edit</a> 
+            <a href={`/places/${data.id}/edit`} className="btn btn-warning"><i class="fa-solid fa-pencil"></i> Edit</a> 
             <form method='POST' action={`/places/${data.id}?_method=DELETE`}>
-             <button type ='submit' className='btn btn-danger'>Delete
+             <button type ='submit' className='btn btn-danger'><i class="fa-solid fa-trash-can"></i> Delete
              </button>
             </form>
           </main>

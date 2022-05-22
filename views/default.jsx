@@ -7,6 +7,7 @@ function Def (html) {
       <title>Title</title>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
       <link rel="stylesheet" href="/css/style.css"/>
+      <script src="https://kit.fontawesome.com/f0e72bcfcc.js" crossorigin="anonymous"></script>
     </head>
     <body>
       <nav>
