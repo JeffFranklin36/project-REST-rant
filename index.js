@@ -25,4 +25,6 @@ app.get('*', (req, res)=> {
     res.render('error404')
 })
 
-app.listen(process.env.PORT)
+const PORT = process.env.PORT
+
+app.listen(PORT, () => {console.log(`listening on port ${PORT}`)})
