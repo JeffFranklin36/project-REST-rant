@@ -49,17 +49,15 @@ router.post('/', (req, res) => {
 
 //delete route
 router.delete('/:id', (req, res) => {
-  let id = Number(req.params.id)
-  if (isNaN(id)) {
+ let id = req.params.id
+ db.Place.findByIdAndDelete(req.params.id)
+ .then(() => {
+   res.redirect('/places')
+  })
+  .catch(err => {
+    console.log('err', err)
     res.render('error404')
-  }
-  else if (!places[id]) {
-    res.render('error404')
-  }
-  else {
-    places.splice(id, 1)
-    res.redirect('/places')
-  }
+  })
 })
 
 
